@@ -62,7 +62,7 @@ const Customizer = () => {
         headers: {
           accept: "application/json",
           "content-type": "application/json",
-          authorization: `Bearer ${process.env.AI_TOKEN}`,
+          authorization: `Bearer ${import.meta.env.VITE_AI_TOKEN}`,
         },
         body: JSON.stringify({
           response_as_dict: true,
